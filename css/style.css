@@ -1,0 +1,151 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Montserrat', sans-serif;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+main{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: black;
+}
+
+.col{
+    flex: 1;
+    height: 100vh;
+    position: relative;
+    overflow-x: hidden;
+
+}
+
+.col-colDown{
+  
+    background-image: url(../images/images.jpg);
+    background-size: cover;
+    background-position: center;
+
+}
+
+.time{
+   display: flex;
+   width: 90%;
+   justify-content: center;
+   text-transform: uppercase;
+
+}
+
+
+.middle{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+.time span{
+   text-align: center;
+   font-size:10px;
+   color: #FFF;
+   padding: 0 14px;
+
+
+}
+
+.time span div{
+    font-size: 40px;;
+    font-weight: 700;
+    color: #FFF;
+    margin-bottom: 0px;
+    
+}
+
+
+.col-newLleter{
+    background-color: #f1f1f1;;
+    text-align: center;
+}
+
+.letter{
+    position: absolute;
+    width: 90%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.letter h2{
+    font-size: 27px;
+    text-transform: uppercase;
+}
+
+.letter p{
+    font-size: 11px;
+    text-transform: uppercase;
+    margin: 10px 0px;
+}
+
+.letter input{
+    width: 100%;
+    max-width: 340px;
+    height: 35px;
+    border-radius: 17.5px;
+    border: 1px solid steelblue;
+    margin: 8px 0px;
+    padding: 0px 15px;
+    box-sizing: border-box;
+    outline: none;
+
+}
+
+input.btn{
+    border:none;
+    background: linear-gradient(45deg, rgb(38, 96, 202),  rgb(56, 109, 207));
+    color: #f1f1f1;
+    text-transform: uppercase;
+    cursor: pointer;
+    padding: 0;
+}
+
+.email{
+    transition-duration: 1s;
+    transition-property: border;
+  
+}
+
+.email:required{
+    border-color: steelblue;
+}
+
+
+.email:focus:invalid{
+    border-color: #65092d;
+    background-image: url(../images/invalid.png);
+    background-position: right 3px center;
+    background-repeat: no-repeat;
+    background-size: 25px;
+
+}
+
+.email:focus:valid{
+    border-color: #429344;
+    background-image: url(../images/valid.png);
+    background-position: right 3px center;
+    background-repeat: no-repeat;
+    background-size: 25px;
+}
+
+input.btn:hover{
+    opacity: 0.7;
+}
+
+@media screen and (max-width:900px){
+    .col{
+        flex: 100%;
+
+    }
+}
